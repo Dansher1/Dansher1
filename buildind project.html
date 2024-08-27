@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Building</title>
+</head>
+<style>
+.header{
+    height: 50px !important;
+
+}
+.icon{
+    font-size: 30px;
+    color: blue;
+}
+.icon-text{
+    color: blue;
+    padding-left: 10px;
+}
+.li{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+.lil{
+    color: darkorange;
+    text-decoration: none;
+
+}
+.bar{
+    justify-content: center;
+    margin-top: 10px;
+}
+ul {
+    list-style-type: none;
+    
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+}
+.our-text{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+
+}
+.div-1{
+    border: 1px solid black;
+    padding:10px ;
+    height: 150px;
+    width: 300px;
+
+}
+.icon-color{
+    color: darkorange !important;
+}
+.div-1-txt{
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-2{
+    margin-top: 30px ;
+}
+.div-s{
+    display: flex;
+    justify-content: space-around;
+}
+.ser{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    padding: 50px;
+    justify-content:space-around;
+}
+.cart-icon-size{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.cardcolor{
+    background-color: rgb(61, 61, 161) !important; 
+    margin-left: 40px !important ;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    background-color:rgb(235, 229, 229) !important;
+    /* background: none; */
+    height: 3px;
+    width: 90px;
+    
+    
+}
+.card2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.Consultationcard{
+    margin-left: 40px;
+    align-items: center;
+
+}
+.cardcolor{
+    margin-left: 40px;
+    align-items: center;
+}
+.Construction{
+    margin-left: 40px;
+    align-items: center;
+}
+.sndcard{
+    margin-left: 40px;
+    align-items: center;
+}
+.Architecture{
+    margin-left: 40px;
+    align-items: center;
+}
+.card2{
+    display: flex;
+    padding: 50px;
+    justify-content:space-around;  
+    
+}
+.sndcard{
+    background-color: rgb(61, 61, 161) ;
+}
+.about{
+    color:black;
+    height: 250px;
+    width: 300px;
+    background-color:blueviolet;
+    text-align: center;
+    margin: 80px;
+    margin-top: 200px;
+    z-index: 1;
+    position:absolute;
+    /* bottom: 100px; */
+    left: 500px;
+    /* margin-right: 650px; */
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+.example{
+    height: 200px;
+    width: 500px;
+    background-color: rgb(46, 208, 208);
+    text-align: center;
+    
+}
+.line{
+    height: 5px;
+    width: 50px;
+    /* color: black; */
+    background-color: rgb(241, 18, 18);
+    /* margin-left: 200px; */
+    
+}
+.next-img{
+    margin: 80px;
+    /* z-index: 2; */
+    position:relative;
+}
+
+
+
+
+
+
+.year-award{
+    justify-content: space-between;
+}
+.snd-img-div{
+    position:relative;
+    
+}
+.pr{
+    position: absolute;
+    top: 100px;
+    left: 110px;
+}
+.free{
+    color: #fff;
+}
+.input{
+    position: absolute;
+    top: 130px;
+    right: 100px;
+}
+.inn{
+    height: 50px;
+    /* justify-content: center; */
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    border: #fff solid 2px;
+    /* text-decoration: aliceblue; */
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+::placeholder{
+    color: #fff;
+}
+.form{
+    display:grid;
+    /* justify-content:center; */
+    text-align: center;
+    background-color: azure;
+    /* margin-top: 40px; */
+    /* font-weight: bold; */
+}
+.div-form{
+    /* justify-content: center; */
+    /* display: grid; */
+    width: 700px;
+    /* display:flex; */
+    /* align-items: center; */
+    /* align-content: center; */
+    margin-left:400px ;
+    /* margin-top: 100px; */
+}
+.bttn{
+    height: 45px;
+    width: 180px;
+    border-radius: 4px;
+    background-color: rgb(92, 92, 187);
+    margin-right: 150px ;
+    border: none;
+    color: #fff;
+    margin-bottom: 40px;
+
+}
+.h3{
+    margin-top: 40px;
+}
+.last-div{
+    height: 60px;
+    background-color:rgb(71, 71, 178);
+    
+}
+.thebox{
+    color: #fff;
+    /* margin-top: 9px; */
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.last-icon{
+    display: flex;
+    padding-top: 25px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.last-input{
+    height: 40px;
+    width: 300px;
+    border: solid black 1px;
+    border-radius: 4px;
+    /* border: none; */
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.btn-Subscribe{
+    background-color: orange;
+    height: 40px;
+    width: 110px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}
+.fb-icn{
+   font-size: 40px;
+   text-decoration: none;
+   color: black !important;
+}
+.socail{
+    margin-top: 20px;
+}
+.ads{
+    color: rgb(113, 113, 208);
+    font-weight: bold;
+}
+.link-a{
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+}
+
+.div-project{
+    position: relative;
+    height: 150px;
+    width: 385px;
+    background-color: rgb(88, 88, 194);
+    /* display: grid; */
+    /* justify-content: center; */
+    bottom: 150px;
+    left: 963px;
+    color: #fff;
+    text-align: center;
+    /* font-weight: bold; */
+    padding-top: 10px;
+}
+.bbtn{
+    height: 30px;
+    width: 190px;
+    margin-top: 35px;
+    background-color: black;
+    color: #fff;
+}
+.about-btn{
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+    color: rgb(95, 95, 181);
+}
+.project2{
+    height: 600px;
+    /* width: 600px; */
+    /* background-color: burlywood; */
+    position: relative;
+    /* display: flex; */
+}
+.status{
+    position: relative;
+    height: 100px;
+    width: 200px;
+    /* border: solid black 1px; */
+    padding: 10px;
+    box-shadow: 0px 3px 9px 1px ;
+    border-radius: 3px;
+}
+.pic-status{
+    position:absolute ;
+    bottom: 96px;
+    right: 180px;
+
+}
+.d1-move{
+    position: relative;
+    padding-left: 100px;
+    padding-top: 190px;
+    
+}
+.d2-move{
+    position: absolute;
+    left: 135px;
+    bottom: 120px;
+    
+
+}
+.d2-move-pic{
+    position:absolute ;
+    top: 90px;
+    left: 170px;
+
+}
+.d3-move{
+    position: absolute;
+    left: 260px;
+    top: 120px;
+    
+}
+.d3-move-pic{
+    position: relative;
+    /* top: 30px; */
+    bottom: 60px;
+    left: 160px;
+
+}
+.d3-in-pic{
+    position: absolute;
+}
+.d4-move{
+    position: absolute;
+    left: 280px;
+    
+}
+.d4-in-pic{
+    position: relative;
+    bottom:40px ;
+    left: 170px;
+}
+.d4-move-pic{
+    position: absolute;
+}
+.Years{
+    background-color: aqua;
+    /* width: 400px; */
+    /* height: 200px; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* display:; */
+    /* justify-content: center; */
+    color: blue;
+
+}
+.pra-yers{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+.Exp-div{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+}
+.pra{
+    height: 300px;
+    width: 500px;
+    /* background-color: rgb(189, 189, 238); */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-top: 160px;
+    color: rgb(51, 51, 116);
+}
+.bold{
+    font-weight:bold    ;
+    font-size: 30px;
+    margin-right: 130px;
+    /* gap: 2; */
+}
+.bwtn{
+    height: 40px;
+    background-color: rgb(51, 51, 151);
+    border: none;
+    color: #fff;
+}
+.all{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* padding: 5px; */
+    /* padding: auto; */
+}
+.project-div{
+    display: flex;
+    justify-content:space-around;
+    height: 600px;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card-new{
+    height: 100px !important;
+    width: 300px !important;
+    margin-bottom: 150px !important  ;
+}
+.card-body-last{
+    background-color: rgb(97, 97, 189);
+    color: #fff;
+}
+.div-c{
+    /* background-color: beige; */
+    height: 800px;
+    width: 600px;
+    /* display: flex; */
+    /* justify-content: center; */
+
+}
+
+</style>
+<body>
+    <div class="container">
+        <div>
+            <div class="container">
+                <header class="d-flex flex-wrap justify-content header">
+                  <a href="/" class="d-flex align-items-center  mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                   <div class="icon"> <i class="fa-solid fa-box"></i></div>
+                    <i><h4 class="icon-text" >TheBox</h4></i>
+                  </a>
+            
+                  <ul class=" d-flex bar" >
+                   <li><a href="" class="li">Home</a></li>
+                   <li><a href="#about" class="li">About us</a></li>
+                   <li><a href="#projrct" class="li">Project</a></li>
+                   <li><a href="#Services" class="li">Service</a></li>
+                   <li><a href="#content" class="lil">Contant us</a></li>
+                  </ul>
+                </header>
+              </div>
+        </div>
+    </div>
+    <div>
+        <img src="./building.jpg" alt="" width="100%">
+        <div class="centered">
+        <pre >
+        Building things <br> is our mission
+        </pre>
+        </div>
+    </div>
+    <div class="div-project">
+        <h4>Feature Project</h4>
+        <pre class="the">The National University Of Architecture</pre>
+        <div>
+            <button class="btn btn-primary" type="submit">Back</button>
+            <button class="bbtn" type="submit">next</button>
+        </div>
+    </div>
+
+<!-- 
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <div class="card p-3">
+                    <h5>Best Services</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam iusto reiciendis repellendus?</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3">
+                    <h5>Best Services</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam iusto reiciendis repellendus?</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3">
+                    <h5>Best Services</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam iusto reiciendis repellendus?</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <div class="container div-2">
+        <h4 class="our-text">Our Reputation</h4>
+            <div class="div-s">
+                <div class="div-1">
+                    <i class="fa-solid fa-headphones-simple icon-color"></i>
+                    <p class="div-1-txt">Best Service</p>
+                    <p>
+                    Nullam senectus porttitor in <br>
+                    eget. Eget return leo interdum 
+                    </p>
+                </div>
+                <div class="div-1"> 
+                    <i class="fa-solid fa-headphones-simple icon-color"></i>
+                    <p class="div-1-txt">Best Teams</p>
+                    <p>
+                        Cursus semper tellus volutpatbr <br>
+                        allque lacus
+                    </p>
+                </div>
+                <div class="div-1">
+                    <i class="fa-solid fa-pen-ruler icon-color"></i>
+                    <p class="div-1-txt">Best Design</p>
+                    <p>
+                        Ultricies at ipsum nunc,    <br>
+                        tristique nam lectus.
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    <div class="d-flex">
+        <img class="next-img" src="./th.jpeg" alt="" height="400px">
+            <div class="about" id="about">
+                <h3>About us</h3>
+                <p>The z-index property specifies the stack order of an element.
+                An element with greater stack order is always in front of an element with a lower stack order</p>
+                <button class="about-btn">More on Your History</button>
+            </div>
+    </div>
+
+
+    <section>
+        <div class="servicecard" id="Services">
+            <h3 class="ser">Services</h3>
+            <div class="cards ">
+             <div class="row">
+                <div class="card Construction" style="width: 18rem;">
+                    <span class="cart-icon-size">   <i  class="fa-solid fa-trowel-bricks"></i></span>
+                    <img class="img" src="./Rectangle 18.png" alt="">
+                       <h4 class="heading">Construction</h4>
+                       <div class="card-body">
+                         <!-- <h5 class="card-title">Card title</h5> -->
+                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                       </div>
+                   </div>
+                   <div class="card cardcolor" style="width: 18rem;">
+                      <span class="cart-icon-size"> <i class="fa-solid fa-vector-square"></i></span>
+                      <img class="img" src="./Rectangle 18.png" alt="">
+                       <h4  class="heading">Renovation</h4>
+                       <!-- <img src="..." class="card-img-top" alt="..."> -->
+                       <div class="card-body">
+                         <!-- <h5 class="card-title">Card title</h5> -->
+                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                       </div>
+                   </div>
+                   <div class="card  Consultationcard " style="width: 18rem;">
+                      <span  class="cart-icon-size"> <i class="fa-regular fa-handshake"></i></span>
+                      <img class="img" src="./Rectangle 18.png" alt="">
+                       <h4  class="heading">Consultation</h4>
+                       <!-- <img src="..." class="card-img-top" alt="..."> -->
+                       <div class="card-body">
+                         <!-- <h5 class="card-title">Card title</h5> -->
+                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                       </div>
+                     </div>
+             </div>
+               
+            </div>
+
+        </div>
+
+        <div class="card2">
+            <div class="card  sndcard" style="width: 18rem;">
+                <span class="cart-icon-size" ><i class="fa-solid fa-toolbox"></i></span>
+                <img class="img" src="./Rectangle 18.png" alt="">
+                <h4  class="heading">Repair Services</h4>
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div><div class="card Architecture" style="width: 18rem;">
+               <span  class="cart-icon-size"> <i class="fa-solid fa-sitemap"></i></span>
+               <img class="img" src="./Rectangle 18.png" alt="">
+                <h4  class="heading">Architecture</h4>
+                <!-- <hr class="underline"> -->
+                <!-- <P class="underline"></P> -->
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+              <div class="card sndcard" style="width: 18rem;">
+               <span  class="cart-icon-size"> <i class="fa-solid fa-charging-station"></i></span>
+               <img class="img" src="./Rectangle 18.png" alt="">
+               <!-- <hr  class="line"> -->
+                <h4  class="heading">Electric</h4>
+                
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div class="Exp-div">
+        <div class="project2">
+        
+            <div class="d1-move">
+                <div class="status">
+                    <div class="pic-status"><img src="./notepen.png" alt="" height="50px" width="100px"></div>
+                    <h2>123</h2>
+                    <h5>|Project Completed</h5>
+                </div>
+            </div>
+            <div class="d2-move">
+                <div class="status">
+                    <div class="d2-move-pic"><img src="./note.jpeg" alt="" height="50px" width="100px"></div>
+                    <h2>30</h2>
+                    <h5>|Years in Business</h5>
+                </div>
+            </div>
+            <div class="d3-move">
+                <div class="status">
+                <div class="d3-in-pic">
+                    <div class="d3-move-pic"><img src="./shakehand.png" alt="" height="50px" width="100px"></div>
+                </div>
+                    <h2>84</h2>
+                    <h5>|Happy Clients</h5>
+                </div>
+            </div>
+            <div class="d4-move">
+                <div class="status">
+                <div class="d4-in-pic">
+                    <div class="d4-move-pic"><img src="./award.jpeg" alt="" height="50px" width="100px"></div>
+                </div>
+                    <h2>34</h2>
+                    <h5>|Awards Win</h5>
+                </div>
+            </div>
+        
+        
+        </div>
+        <!-- <div class="Years">
+         <pre class="pra-yers">
+         30 Years
+        Experience
+              
+         </pre>
+            <pre>
+                 Our company has been the leading
+                 provided construction services to
+                 clients throughout the USA since 1988.
+                </pre>
+        
+            <button>Content us</button>
+        </div> -->
+         <div class="pra">
+       
+         <h1><b>30 Years</b></h1> 
+        <h1><b> Experience</b></h1>
+        
+    <pre>Our company has been the leading
+provided construction services to
+clients throughout the USA since 1988.</pre>
+            <button class="bwtn">Contact us</button>
+         </div>
+   </div>
+
+   <div class="snd-img-div">
+    <img src="./kitchem.jpeg" alt="" height="300px" width="100%">
+    <div class="pr">
+        <h3 class="free">Free Consultation with exceptional quality</h3>
+        <span class="free">Just one call away: <a href="" class="free">+84 1102 2703</a></span>
+    </div>
+    <div class="input">
+        <input type="text" class="inn" placeholder="Get your consultation">
+    </div>
+   </div>
+  <div class="project-div " id="projrct"  >
+    <div class="">
+        <h2>Project</h2>
+        <ul>
+            <a class="all" href=""> <li >All</li></a>
+            <!-- <a  class="all"> <li >Commercial</li></a> -->
+            <a class="all" href=""><li>Commercial</li></a>
+            <a class="all" href=""> <li>Residential</li></a>
+            <a class="all" href=""> <li>Orther</li></a>
+        </ul>
+       </div>
+       <div class="div-c">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-md-2 g-4">
+            <div class="col card-new">
+              <div class="card shadow-md">
+                <img src="./pc-2.jpeg" alt="">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100px" height="200px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body-last">
+                    <h6>Oregano height</h6>
+                    <p>6754 Royal Ln. Mesa New Jersy</p>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+           
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col card-new mb-4">
+              <div class="card shadow-sm">
+                <img src="./pc-3.jpeg" alt="">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body-last">
+                    <h6>Wildstone Infra Hotel</h6>
+                    <p>2715 Ash San Josn Soth Dokta</p>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col card-new">
+              <div class="card shadow-sm">
+                <img src="./pc-1.jpeg" alt="">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body-last">
+                    <h6>Wish Stone Building </h6>
+                    <p>2972 Westheimer Rd Santa Ana  </p>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                    </div>
+                    <!-- <small class="text-body-secondary">9 mins</small> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col card-new">
+              <div class="card shadow-sm">
+                <img src="./building.jpg" alt="">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body-last">
+                    <h6>Mr. parkinston's House</h6>
+                    <p>3517 W.Gray St.Utic </p>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                    </div>
+                    <!-- <small class="text-body-secondary">9 mins</small> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+           
+          </div>
+       </div>
+  </div>
+   <div class="form">
+        <h3 class="h3">What can us do for  you ?</h3>
+     <pre>
+<h5> We are ready to work on a project of any complextiy
+     whether it's commercial or resident al.</h5> </pre>
+
+    
+    
+        <div class="div-form">
+            <form action="">
+                <div class="row g-3">
+                    <div class="col-sm-5">
+                      <!-- <label for="firstName" class="form-label">First name</label> -->
+                      <input type="text" class="form-control" id="firstName" placeholder="Your Name*" value="" required="" >
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+        
+                    <div class="col-sm-5">
+                      <!-- <label for="lastName" class="form-label">Last name</label> -->
+                      <input type="text" class="form-control" id="lastName" placeholder="Email*" value="" required="" fdprocessedid="f1jztj">
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div><br>
+                    </div>
+                    <div class="col-sm-5 mb-4">
+                        <!-- <label for="firstName" class="form-label">First name</label> -->
+                        <input type="text" class="form-control" id="firstName" placeholder="Reason for Contacting" >
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-5">
+                        <!-- <label for="lastName" class="form-label">Last name</label> -->
+                        <input type="text" class="form-control" id="lastName" placeholder=" phone" value="" required="" fdprocessedid="f1jztj">
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+    
+                      <div class="mb-3 col-10">
+                        <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea in</label> -->
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                      </div>
+                  </div>
+                  <button class="bttn" type="button">Submit</button>
+             </form>
+        </div>
+   </div>
+  
+   <footer>
+    <div class="footer">
+        <div id="content">
+            <div class="ads">ADDRESS: <a href="" class="link-a">6391 Eldin St Celin, Dalaware 10299 </a> </div> <br>
+            <div class="ads">PHONE: <a href="" class="link-a">+84 1102 2703</a></div><br>
+            <div class="ads">EMAIL: <a href="" class="link-a">hello@gamil.com</a></div><br>
+
+            <div class="last-icon">
+                <div class="icon"> <i class="fa-solid fa-box"></i></div>
+                    <i><h4 class="icon-text" >TheBox</h4></i>
+            </div>
+        </div>
+        <div>
+            <h4 class="ads">NEWSLETTET:</h4><br>
+            <div>
+                <input class="last-input" type="text" placeholder="Your Email here">
+                <button  class="btn-Subscribe" type="submit">Subscribe</button>  <br>          
+            </div>
+             <div class="socail">
+                <h4 class="ads">SOCAIL:</h4>
+                <div class="fb-icn">
+                    <a href=""><i class="fa-brands fa-facebook " style="color: black;" ></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+                </div>
+             </div>
+
+        </div>
+    </div>
+
+   </footer>
+   <div class="last-div ">
+      <p class="thebox">TheBox Company @ 2202. ALL Right Reserved</p>
+   </div>
+</body>
+</html>
